@@ -1,0 +1,10 @@
+{%extends "blog/base.html"%}
+{% block content %}
+<!-- <h1>Blog home!!</h1> -->
+{% for post in posts%}
+<h1>{{post.Name}}</h1>
+<h2>Age:{{post.Age}}</h2>
+<h3>Location:{{post.Location}}</h3>
+{%endfor%}
+
+  {%endblock content%}
